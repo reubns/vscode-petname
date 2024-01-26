@@ -64,7 +64,7 @@
     ]
   },
   "scripts": {
-    "build": "tsup src/index.ts --external vscode",
+    "build": "esno scripts/build.ts",
     "dev": "pnpm build -- --watch",
     "lint": "eslint .",
     "release": "bumpp --tag --push --commit",
@@ -73,11 +73,13 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^1.1.1",
+    "@types/fs-extra": "^11.0.4",
     "@types/node": "^20.9.0",
     "@types/vscode": "^1.84.1",
     "bumpp": "^9.2.0",
     "eslint": "^8.53.0",
     "esno": "^4.0.0",
+    "fs-extra": "^11.2.0",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"
