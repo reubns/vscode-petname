@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/reubns/vscode-petname/blob/main/screenshots/preface.png?raw=true" alt="logo" width='650'/>
+  <img src="https://github.com/reubns/vscode-petname/blob/main/screenshots/preface.png?raw=true" alt="logo" width="650"/>
 </p>
 
 <p align="center">
@@ -14,15 +14,15 @@
 
 <br>
 
-<p align='center'>
-  <img src="https://github.com/reubns/vscode-petname/blob/main/screenshots/preview-1.png?raw=true" alt='preview'>
+<p align="center">
+  <img src="https://github.com/reubns/vscode-petname/blob/main/screenshots/preview.gif?raw=true" alt="preview">
 </p>
 
 ### Features
 
-- 😸 create pronounceable, memorable, and charming pet names
-- ✨ provides completions in configured languages 
-- 📥 shortcut for inserting in any language
+- 🐼 create pronounceable, memorable, and charming pet names
+- 📥 <kbd>Ctrl Alt P</kbd> shortcut for inserting in any language
+- ✨ intellisense to insert a new pet name
 - ⚙️ configure the amount of words in a name
 
 ## Acknowledgement

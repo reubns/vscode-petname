@@ -2,20 +2,25 @@
   "publisher": "reubns",
   "name": "petname",
   "displayName": "Petname",
-  "version": "1.0.0",
+  "type": "commonjs",
+  "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@8.10.5",
-  "description": "",
+  "packageManager": "pnpm@8.13.1",
+  "description": "Pet names for VSCode",
   "author": "Reuben <36566445+reubns@users.noreply.github.com>",
   "license": "MIT",
-  "homepage": "https://github.com/reubens/vscode-petname#readme",
+  "homepage": "https://github.com/reubns/vscode-petname#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/reubens/vscode-petname"
+    "url": "https://github.com/reubns/vscode-petname"
   },
   "bugs": {
-    "url": "https://github.com/reubens/vscode-petname/issues"
+    "url": "https://github.com/reubns/vscode-petname/issues"
   },
+  "keywords": [
+    "petname"
+  ],
+  "preview": true,
   "categories": [
     "Other",
     "Snippets"
@@ -39,13 +44,6 @@
     "configuration": {
       "title": "Petname",
       "properties": {
-        "petname.languages": {
-          "type": "array",
-          "default": [
-            "plaintext",
-            "typescript"
-          ]
-        },
         "petname.separator": {
           "type": "string",
           "default": "-",
@@ -67,29 +65,21 @@
   },
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
-    "dev": "nr build --watch",
+    "dev": "pnpm build -- --watch",
     "lint": "eslint .",
-    "vscode:prepublish": "nr build",
-    "publish": "vsce publish --no-dependencies",
-    "pack": "vsce package --no-dependencies",
+    "release": "bumpp --tag --push --commit",
     "test": "vitest",
-    "typecheck": "tsc --noEmit",
-    "release": "bumpp && nr publish"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^1.1.1",
-    "@antfu/ni": "^0.21.9",
     "@types/node": "^20.9.0",
     "@types/vscode": "^1.84.1",
-    "@vscode/vsce": "^2.22.0",
     "bumpp": "^9.2.0",
     "eslint": "^8.53.0",
     "esno": "^4.0.0",
-    "pnpm": "^8.10.5",
-    "rimraf": "^5.0.5",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2",
-    "vite": "^4.5.0",
     "vitest": "^0.34.6"
   }
 }
