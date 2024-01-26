@@ -1,0 +1,40 @@
+name: Release
+
+permissions:
+  contents: write
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: set node
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          cache: pnpm
+
+      - name: install dependencies
+        run: pnpm install
+
+      - name: generate changelog
+        run: npx changelogithub
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: build
+        run: pnpm run build
+
+      - name: publish
+        run: cd dist && npx vsce publish -p ${{secrets.VSCE_TOKEN}} --no-dependencies
+        env:
+          VSCE_TOKEN: ${{secrets.VSCE_TOKEN}}
