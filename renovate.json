@@ -1,6 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
-  ]
+    "config:best-practices",
+    "schedule:monthly",
+    "group:allNonMajor"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "rangeStrategy": "bump"
 }
