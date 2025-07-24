@@ -72,16 +72,16 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^1.2.1",
-    "@types/fs-extra": "^11.0.4",
-    "@types/node": "^20.17.10",
-    "@types/vscode": "^1.96.0",
-    "bumpp": "^9.9.1",
-    "eslint": "^8.57.1",
-    "esno": "^4.8.0",
-    "fs-extra": "^11.2.0",
-    "tsup": "^7.2.0",
-    "typescript": "^5.7.2",
-    "vitest": "^0.34.6"
+    "@antfu/eslint-config": "1.2.1",
+    "@types/fs-extra": "11.0.4",
+    "@types/node": "20.17.10",
+    "@types/vscode": "1.96.0",
+    "bumpp": "9.9.1",
+    "eslint": "8.57.1",
+    "esno": "4.8.0",
+    "fs-extra": "11.2.0",
+    "tsup": "7.2.0",
+    "typescript": "5.7.2",
+    "vitest": "0.34.6"
   }
 }
