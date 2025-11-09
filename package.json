@@ -5,7 +5,7 @@
   "type": "commonjs",
   "version": "0.0.5",
   "private": true,
-  "packageManager": "pnpm@8.15.9",
+  "packageManager": "pnpm@10.20.0",
   "description": "Pet names for VSCode",
   "author": "Reuben <36566445+reubns@users.noreply.github.com>",
   "license": "MIT",
