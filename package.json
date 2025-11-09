@@ -28,7 +28,7 @@
   "main": "./dist/index.js",
   "icon": "res/icon.png",
   "engines": {
-    "vscode": "^1.102.2"
+    "vscode": "^1.999.0"
   },
   "activationEvents": [
     "onStartupFinished"
@@ -74,14 +74,14 @@
   "devDependencies": {
     "@antfu/eslint-config": "1.2.1",
     "@types/fs-extra": "11.0.4",
-    "@types/node": "20.19.9",
-    "@types/vscode": "1.102.0",
+    "@types/node": "20.19.24",
+    "@types/vscode": "1.105.0",
     "bumpp": "9.11.1",
     "eslint": "8.57.1",
     "esno": "4.8.0",
-    "fs-extra": "11.3.0",
+    "fs-extra": "11.3.2",
     "tsup": "7.2.0",
-    "typescript": "5.8.3",
+    "typescript": "5.9.3",
     "vitest": "0.34.6"
   }
 }
