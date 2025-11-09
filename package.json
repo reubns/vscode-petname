@@ -72,7 +72,7 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "1.2.1",
+    "@antfu/eslint-config": "6.2.0",
     "@types/fs-extra": "11.0.4",
     "@types/node": "20.19.24",
     "@types/vscode": "1.105.0",

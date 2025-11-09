@@ -15,7 +15,8 @@ export function insert(content: string) {
         builder.replace(selection, content)
         advancedSelections.push(getAdvancedSelection(selection, content))
       })
-    }).then(() => {
+    })
+    .then(() => {
       editor.selections = advancedSelections
     })
 };
