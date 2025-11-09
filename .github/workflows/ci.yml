@@ -20,7 +20,7 @@ jobs:
         uses: pnpm/action-setup@v2
 
       - name: set node
-        uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6
         with:
           node-version: lts/*
           cache: pnpm
@@ -40,7 +40,7 @@ jobs:
         uses: pnpm/action-setup@v2
 
       - name: set node
-        uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6
         with:
           node-version: lts/*
           cache: pnpm
@@ -67,7 +67,7 @@ jobs:
         uses: pnpm/action-setup@v2
 
       - name: set node version to ${{ matrix.node }}
-        uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6
         with:
           node-version: ${{ matrix.node }}
           cache: pnpm
