@@ -5,7 +5,7 @@
   "type": "commonjs",
   "version": "0.0.5",
   "private": true,
-  "packageManager": "pnpm@10.20.0",
+  "packageManager": "pnpm@10.24.0",
   "description": "Pet names for VSCode",
   "author": "Reuben <36566445+reubns@users.noreply.github.com>",
   "license": "MIT",
@@ -72,16 +72,16 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "6.2.0",
+    "@antfu/eslint-config": "6.3.0",
     "@types/fs-extra": "11.0.4",
-    "@types/node": "20.19.24",
-    "@types/vscode": "1.105.0",
+    "@types/node": "20.19.25",
+    "@types/vscode": "1.106.1",
     "bumpp": "9.11.1",
     "eslint": "9.39.1",
     "esno": "4.8.0",
     "fs-extra": "11.3.2",
-    "tsup": "8.5.0",
+    "tsup": "8.5.1",
     "typescript": "5.9.3",
-    "vitest": "4.0.8"
+    "vitest": "4.0.15"
   }
 }
